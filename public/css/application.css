@@ -24,7 +24,7 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
     /* Roboto Condensed looks amazing if it's bold & huge */
   font-weight: bold;
-  font-size: 250%;
+  font-size: 300%;
 }
 
 h2, h3, h4, h5 {
@@ -46,9 +46,9 @@ h2, h3, h4, h5 {
 .container {
   width: 100%;
   max-width: 720px;
-  margin: 0 auto;
+  margin: 3% auto;
   margin-top: 3%;
-  padding: 0;
+  padding: 0 10px;
   clear: both;
 }
 
