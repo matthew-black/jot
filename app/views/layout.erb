@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- removes cross-browser differences -->
+  <link rel="stylesheet" href="/css/normalize.css">
+
+    <!-- Styles go here plz -->
+  <link rel="stylesheet" href="/css/application.css">
+
+    <!-- Clean sans-serif combo -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <!-- Slightly more snazy sans headers & serif content -->
+<!--   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet"> -->
+
+    <!-- jQuery all the things -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script src="/js/application.js"></script>
+
+  <title>Make Something</title>
+</head>
+
+<body class="container">
+  <h1 class="left">Website Something</h1>
+  <div id="session-manager" class="right">
+    <% if logged_in? %>
+      <%= erb :"sessions/_logged_in_nav", layout: false %>
+    <% else %>
+      <%= erb :"sessions/_logged_out_nav", layout: false %>
+    <% end %>
+  </div>
+  <main class ="main-container">
+    <%= yield %>
+  </main>
+</body>
+</html>
+
+

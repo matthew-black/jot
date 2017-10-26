@@ -1,0 +1,149 @@
+body {
+  background-color: #F8F8F8;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+}
+
+nav {
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+h1 {
+/*  margin: 0.1em 0;
+  padding: 0.2em 0 0.2em;*/
+  color: #222;
+  font-family: 'Roboto Condensed', sans-serif;
+    /* Roboto Condensed looks amazing if it's bold & huge */
+  font-weight: bold;
+  font-size: 250%;
+}
+
+h2, h3, h4, h5 {
+/*  margin: 0;
+  padding: 0;*/
+  color: #222;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+  /* This removes borders from size computations */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 3%;
+  padding: 0;
+  clear: both;
+}
+
+main {
+
+  padding-top: 1em;
+  clear: left;
+}
+
+.right {
+  clear: right;
+  float: right;
+  /*width: 35%;*/
+  margin: 2% 0;
+  padding: 0;
+}
+
+. {
+  clear: right;
+  float: right;
+  width: auto;
+  margin: 2% 0;
+  padding: 0;
+}
+
+.left {
+  clear: left;
+  float: left;
+  /*width: 65%;*/
+  margin: 2% 0;
+  padding: 0;
+}
+
+.footer {
+  color: #222;
+  /*border-top: solid 1px #333;*/
+  clear: both;
+  margin: 0;
+  padding: 1em 0 1em;
+}
+
+.content {
+  /*border-left: solid 1px #333;*/
+  color: #444;
+}
+
+.ajax-nav-errors {
+  font-size: 70%;
+  font-style: italic;
+  color: red;
+  text-align: right;
+  list-style-type: none;
+}
+
+.no-style-button {
+  background: none;
+}
+
+.no-style-button input {
+  background: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+}
+
+.user-form input{
+  display: block;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+.user-ajax-form {
+  float: right;
+  width: 153px;
+}
+
+.user-ajax-form input{
+  width: 100%;
+  margin-bottom: 3px;
+  font-size: 50%;
+}
+
+.errors {
+  list-style-type: none;
+  color: red;
+}
+
+#nav-username {
+  color: #888888;
+}
+.
+
+  /* Clean sans combo: */
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+  /* Slightly more hip combo: */
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Merriweather', serif;*/
