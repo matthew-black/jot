@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+  #--This makes the magic--#
+gem 'unsplash'
+gem 'dotenv'
+
   #--PostgreSQL--#
 gem 'pg'
 

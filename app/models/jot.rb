@@ -1,0 +1,3 @@
+class Jot < ApplicationRecord
+
+end
