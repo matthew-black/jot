@@ -1,7 +1,7 @@
   #--Display all of the jots--#
 get '/jots' do
-  # photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
-  # @photo = Photo.new(url: photo.urls.regular, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
+  photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
+  @photo = Photo.new(url: photo.urls.regular, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
   erb :"/jots/new"
 end
 

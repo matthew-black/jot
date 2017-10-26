@@ -146,11 +146,18 @@ main {
 
 textarea {
   font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+
   color: #222;
   background-color: #F8F8F8;
   /*border: solid 1px #222;*/
   outline-width: 0;
   border: none;
+}
+
+#jot-popups {
+  /*visibility: hidden;*/
+  /*float: right;*/
 }
 
 .jot-block {
@@ -165,7 +172,7 @@ textarea {
 }
 
 .write-here {
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   line-height: 1.5em;
 }
 
