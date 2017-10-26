@@ -1,6 +1,10 @@
-# It's a happy place to begin.
+# jot
+This will be a beautiful and minimalistic web app to help myself get back into
+writing as a creative outlet. It will only take six minutes to write a new jot.
+One minute to look at the picture and relax, five minutes to write something.
 
-![totoro](https://i.pinimg.com/474x/b6/64/2d/b6642de3ecb4c4c9c754336ce91889b7--totoro-cute-miyazaki-illustration.jpg)
+## Schema:
+![jot Schema](./jot_schema.png)
 
 ## To-Dos:
   1. Homepage should be a pretty view of recent public jots.
