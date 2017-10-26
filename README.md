@@ -12,3 +12,15 @@
     * display textarea below the photo for five minutes
     * display submit button to create the jot
 
+
+
+Actual display of API-grabbed photo:
+<div class="container">
+   <div class="photo-block">
+    <img class="unsplashed" src="<%= @photo.url %>">
+    <p class="right photog-attribution"><a href="<%= @photo.photog_url %>"><%= @photo.photog_name %></a> / <a href="https://unsplash.com/">Unsplash</a></p>
+  </div>
+</div>
+
+<p><%= @photo.url %></p>
+<img src="<%= @photo.thumb_url %>">

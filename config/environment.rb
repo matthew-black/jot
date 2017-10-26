@@ -1,3 +1,6 @@
+require 'dotenv/load'
+require 'unsplash'
+
 # Set up gems listed in the Gemfile.
 # See: http://gembundler.com/bundler_setup.html
 #      http://stackoverflow.com/questions/7243486/why-do-you-need-require-bundler-setup
@@ -51,3 +54,11 @@ require APP_ROOT.join('app', 'models', 'application_record').to_s
 
 # Set up the database
 require APP_ROOT.join('config', 'database')
+
+# Set up API tokens
+Unsplash.configure do |config|
+  config.application_id     = ENV["APPLICATION_ID"]
+  config.application_secret = ENV["APPLICATION_SECRET"]
+  # config.application_redirect_uri = "https://your-application.com/oauth/callback"
+  config.utm_source = "jot"
+end
