@@ -1,5 +1,7 @@
 <div class="container">
   <% @jots.each do |jot| %>
+  <div class="jot-container">
     <%= erb :"jots/_show", layout: false, locals: { jot: jot } %>
+  </div>
   <% end %>
 </div>

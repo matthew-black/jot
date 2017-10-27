@@ -1,11 +1,9 @@
 
-<div class="jot-container">
 <p class="right photog-attribution"><a href="<%= jot.photo.photog_url %>"><%= jot.photo.photog_name %></a><span class="slash"> / </span><a href="https://unsplash.com/">Unsplash</a></p>
 <a href="/jots/<%= jot.id %>"><img class="center unsplashed" src="<%= jot.photo.url %>"></a>
-
+  <h3 class="jot-preview"><%= jot.content_preview %></h3>
   <p class="jotted_by">jotted by <%= jot.user.username %> on <%= long_form_date(jot.created_at) %></p>
 
-</div>
 
 
 
