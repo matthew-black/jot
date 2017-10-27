@@ -1,12 +1,15 @@
   #--Display all of the jots--#
 get '/jots' do
+  @jots = Jot.order(:created_at).select do |jot|
+    jot.public_post
+  end
   # this will need to be the show page where all the thumbnails live.
-  redirect "/jots/new"
+  erb :"/jots/index"
 end
 
   #--Show page for making a new jot--#
 get '/jots/new' do
-  authenticate!
+  # authenticate!
   photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
   @photo = Photo.new(url: photo.urls.regular, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
   erb :"/jots/new"

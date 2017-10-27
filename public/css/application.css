@@ -155,9 +155,9 @@ textarea {
   border: none;
 }
 
+/*use this id to display messages to the user. ("Look." "Write." "Publish.")*/
 #jot-popups {
   /*visibility: hidden;*/
-  /*float: right;*/
 }
 
 .jot-block {
