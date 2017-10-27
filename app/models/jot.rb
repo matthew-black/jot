@@ -2,6 +2,8 @@ class Jot < ApplicationRecord
   belongs_to :user
   belongs_to :photo
 
+  validates :content, presence: true
+
   def content_preview
     self.content.split[0..3].join(' ').concat('...')
   end

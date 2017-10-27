@@ -1,4 +1,4 @@
-<h2>log in</h2>
+<div class="container">
 
 <% if @errors %>
   <%= erb :"_errors", locals: { errors: @errors } %>
@@ -12,4 +12,5 @@
     <input type="password" name="password">
     <input type="submit" value="login">
   </form>
+</div>
 </div>
