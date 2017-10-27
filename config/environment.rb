@@ -22,7 +22,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'bcrypt'
-require 'extra_print'
 require 'pry'
 
 require 'erb'
