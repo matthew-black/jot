@@ -1,6 +1,6 @@
 <img class="left" src="<%= jot.photo.thumb_url %>">
-<h3 class="right jot-content-preview"><%= jot.content_preview %></h3>
+<p class="right jot-content-preview"><%= jot.content_preview %></p>
 <span class="jot-deets">
-  <h4 class="right jot-author">jotted by <%= jot.user.username %></h4>
-  <h4 class="right jot-date">on <%= long_form_date(jot.created_at) %></h4>
+  <p class="right jot-author">jotted by <%= jot.user.username %></p>
+  <p class="right jot-date">on <%= long_form_date(jot.created_at) %></p>
 </span>
