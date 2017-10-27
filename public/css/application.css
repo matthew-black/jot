@@ -269,3 +269,9 @@ textarea {
   border: none;
   font: inherit;
 }
+
+#about {
+  font-family: 'Roboto Slab', serif;
+  color: #444;
+}
+
