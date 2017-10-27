@@ -13,9 +13,9 @@ h1 {
 
 h2, h3, h4, h5 {
   color: #222;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 * {
@@ -48,7 +48,7 @@ a {
   max-width: 720px;
   margin: auto;
   padding: 0 1em;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .container {
@@ -56,6 +56,14 @@ a {
   max-width: 720px;
   margin: auto;
   padding: 25px 25px;
+  clear: both;
+}
+
+.new-container {
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  padding: 0 25px 25px 25px;
   clear: both;
 }
 
@@ -87,7 +95,7 @@ a {
 .ajax-nav-errors {
   font-size: 70%;
   font-style: italic;
-  color: red;
+  color: #AB4949;
   text-align: right;
   list-style-type: none;
 }
@@ -101,11 +109,20 @@ a {
   padding: 0;
   border: none;
   font: inherit;
+  outline: none;
 }
 
-.user-form {
+#share-unshare-button {
   width: 100%;
-  margin: auto;
+  text-align: right;
+  background: none;
+  padding: 0;
+  border: none;
+  font: inherit;
+  outline: none;
+  font-style: italic;
+  padding: .1em .2em 0 0;
+  color: #444;
 }
 
 .user-form input {
@@ -142,20 +159,6 @@ a {
   top: 2em;
 }
 
-textarea {
-  font-family: 'Roboto Slab', serif;
-  font-size: 16px;
-  color: #222;
-  background-color: #F8F8F8;
-  outline-width: 0;
-  border: none;
-}
-
-/*use this id to display messages to the user. ("Look." "Write." "Publish.")*/
-#jot-popups {
-  /*visibility: hidden;*/
-}
-
 .jot-block {
   display: block;
   width: 90%;
@@ -165,11 +168,6 @@ textarea {
 .unsplashed {
   display: block;
   width: 100%;
-}
-
-.write-here {
-  /*margin-top: 2em;*/
-  line-height: 1.5em;
 }
 
 .jot-content {
@@ -208,6 +206,61 @@ textarea {
   font-style: italic;
 }
 
+.share-unshare {
+  font-style: normal;
+  color: #222;
+  clear: both;
+  float: right;
+  /*width: 35%;*/
+  margin: 0;
+  padding: 0;
+}
+
 .slash {
   font-size: 70%;
+}
+
+#jot-popups {
+  position: relative;
+  bottom: 2em;
+}
+
+#look {
+  visibility: hidden;
+}
+
+#write {
+  visibility: visible;
+}
+
+#textarea-border {
+  box-shadow: 0 0 1.5em #D0D0D0;
+  /*box-shadow: none;*/
+}
+
+textarea {
+  visibility: visible;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #222;
+  background-color: #F8F8F8;
+  outline-width: 0;
+  border: none;
+  line-height: 1.5em;
+  position: relative;
+  bottom: 5em;
+  resize: none;
+}
+
+#publish {
+  position: relative;
+  bottom: 5.3em;
+  text-align: center;
+  visibility: visible;
+  width: 100%;
+  margin: auto;
+  background: none;
+  padding: 0;
+  border: none;
+  font: inherit;
 }

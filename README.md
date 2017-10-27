@@ -32,8 +32,47 @@ this until you've gotten all the goddamn functionality implemented!)
 
 
 Dummy for jots/new.erb (reduce API calls...)
-<div class="container">
-   <div class="jot-block">
+
+  <div class="container">
+   <div class="new-container">
     <p class="right photog-attribution"><a href="https://unsplash.com/@johncobb">John Cobb</a> / <a href="https://unsplash.com/">Unsplash</a></p>
     <img class="unsplashed" src="https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=433878ac7cefa63381b5bd0d265e0040">
   </div>
+
+  <div id="jot-popups" class="jot-block">
+    <h3><span id="write" class="right">write.</span><span id="look" class="left">look.</span></h3>
+  </div>
+
+  <div class="new-container">
+    <form id="jot-form"  action="/jots" method="post">
+      <button id="publish" type="submit"><h3>publish.</h3></button>
+      <span>
+        <textarea class="unsplashed" id="textarea-border" rows="16" name="content"></textarea>
+      </span>
+    </form>
+  </div>
+</div>
+
+
+Actual jots/new.erb:
+
+<div class="container">
+   <div class="new-container">
+    <p class="right photog-attribution"><a href="<%= @photo.photog_url %>"><%= @photo.photog_name %></a> / <a href="https://unsplash.com/">Unsplash</a></p>
+    <img class="unsplashed" src="<%= @photo.url %>">
+  </div>
+
+  <div id="jot-popups" class="jot-block">
+    <h3><span id="write" class="right">write.</span><span id="look" class="left">look.</span></h3>
+  </div>
+
+  <div class="new-container">
+    <form id="jot-form"  action="/jots" method="post">
+      <button id="publish" type="submit"><h3>publish.</h3></button>
+      <span>
+        <input type="hidden" name="photo" value="<%= @photo.id %>">
+        <textarea class="unsplashed" id="textarea-border" rows="16" name="content"></textarea>
+      </span>
+    </form>
+  </div>
+</div>
