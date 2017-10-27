@@ -1,3 +1,5 @@
+# Just a silly old test file. Can delete eventually.
+
 require_relative 'config/environment'
 
 photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
