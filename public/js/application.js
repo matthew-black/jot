@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------ Session and New User Stuff ------/
   // Show login form:
   $("#session-manager").on("click", "#login-link", function(event) {
     event.preventDefault();
