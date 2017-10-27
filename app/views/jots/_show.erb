@@ -1,7 +1,6 @@
-<div>
-  <img class="left" src="<%= jot.photo.thumb_url %>">
-<!--   this p will need to display inline, derp
-  you also need to have a class method that
-  shows the first four or five words... -->
-  <p class="right"><%=  %></p>
-</div>
+<img class="left" src="<%= jot.photo.thumb_url %>">
+<h3 class="right jot-content-preview"><%= jot.content_preview %></h3>
+<span class="jot-deets">
+  <h4 class="right jot-author">jotted by <%= jot.user.username %></h4>
+  <h4 class="right jot-date">on <%= long_form_date(jot.created_at) %></h4>
+</span>
