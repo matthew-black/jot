@@ -8,14 +8,14 @@ end
 
   #--Show page for making a new jot--#
 get '/jots/new' do
-  # authenticate!
-  # photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
-  # @photo = Photo.new(url: photo.urls.regular, small_url: photo.urls.small, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
-  # if @photo.save
+  authenticate!
+  photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
+  @photo = Photo.new(url: photo.urls.regular, small_url: photo.urls.small, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
+  if @photo.save
     erb :"/jots/new"
-  # else
-  #   halt(404, erb(:'404'))
-  # end
+  else
+    halt(404, erb(:'404'))
+  end
 end
 
   #--Create a new jot--#
