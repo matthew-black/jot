@@ -22,7 +22,11 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'bcrypt'
-require 'pry'
+
+begin
+  require 'pry'
+rescue LoadError
+end
 
 require 'erb'
 
