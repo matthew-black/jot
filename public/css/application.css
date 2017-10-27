@@ -230,7 +230,7 @@ a {
 }
 
 #write {
-  visibility: visible;
+  visibility: hidden;
 }
 
 #textarea-border {
