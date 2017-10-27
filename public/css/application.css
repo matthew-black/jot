@@ -4,6 +4,10 @@ body {
   color: #444;
 }
 
+.main-container {
+  padding-bottom: 225px;
+}
+
 nav {
   text-align: right;
 }
@@ -24,7 +28,7 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
     /* Roboto Condensed looks amazing if it's bold & huge */
   font-weight: bold;
-  font-size: 450%;
+  font-size: 500%;
 }
 
 h2, h3, h4, h5 {
@@ -32,8 +36,8 @@ h2, h3, h4, h5 {
   padding: 0;*/
   color: #222;
   font-family: 'Roboto Slab', sans-serif;
-/*  font-weight: bold;
-  font-style: italic;*/
+  font-weight: bold;
+  font-style: italic;
 }
 
   /* This removes borders from size computations */
@@ -188,7 +192,7 @@ textarea {
 .jot-content-preview {
   width: 65%;
   text-align: left;
-  font-style: bold;
+  font-style: thin;
   font-size: 150%;
 }
 
@@ -198,6 +202,7 @@ textarea {
   bottom: 1.3em;
   text-align: left;
   font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 
 .jot-author {
