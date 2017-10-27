@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-
+//------ Timer-based stuff for jots/new ------//
+  // Show 'look' prompt:
 
 
 
