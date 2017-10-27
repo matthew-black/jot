@@ -10,7 +10,7 @@ matt = User.create!(full_name: "Matthew Black", username: "matt", email: "matt@t
 
 3.times do
   api_photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
-  photo = Photo.create!(url: api_photo.urls.regular, thumb_url: api_photo.urls.thumb, photog_name: "#{api_photo.user.first_name} #{api_photo.user.last_name}", photog_url: api_photo.user.links.html)
+  photo = Photo.create!(url: api_photo.urls.regular, small_url: api_photo.urls.small, thumb_url: api_photo.urls.thumb, photog_name: "#{api_photo.user.first_name} #{api_photo.user.last_name}", photog_url: api_photo.user.links.html)
   jot_seed = Jot.create!(content: Faker::Lorem.sentence, public_post: true)
   photo.jot = jot_seed
   matt.jots << jot_seed

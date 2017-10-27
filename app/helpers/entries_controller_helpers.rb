@@ -1,10 +1,9 @@
-  #--Melissa's thingy. Play around with it later--#
-module EntryControllerHelper
+module JotControllerHelper
   def find_and_ensure(id)
-    entry = Entry.find(id)
-    halt(404, erb(:'404')) if entry.nil?
-    entry
+    jot = Jot.find(id)
+    halt(404, erb(:'404')) if jot.nil?
+    jot
   end
 end
 
-helpers EntryControllerHelper
+helpers JotControllerHelper

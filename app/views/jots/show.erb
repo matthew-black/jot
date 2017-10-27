@@ -1,0 +1,11 @@
+<div class="container">
+   <div class="jot-container">
+    <p class="right photog-attribution"><a href="<%= @jot.photo.photog_url %>"><%= @jot.photo.photog_name %></a><span class="slash"> / </span><a href="https://unsplash.com/">Unsplash</a></p>
+    <img class="unsplashed" src="<%= @jot.photo.url %>">
+
+    <p class="left unsplashed jot-content"><%= @jot.content %></p>
+    <p class="jot-author">jotted by <%= @jot.user.full_name %> on <%= long_form_date(@jot.created_at) %></p>
+  </div>
+
+
+</div>

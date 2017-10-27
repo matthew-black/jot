@@ -15,7 +15,7 @@ post '/sessions' do
       session[:user_id] = @user.id
       erb :"sessions/_logged_in_nav", layout: false
     else
-      @error = "incorrect email or password"
+      @ajax_error = "incorrect email or password"
       erb :"sessions/_logged_out_nav", layout: false
     end
   else

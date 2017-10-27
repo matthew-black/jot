@@ -1,17 +1,17 @@
 <nav>
   <ul>
-    <li><a href="/">home</a></li>  |
+    <li><a href="/">about</a></li>  |
     <li id="login-link"><a href="/sessions/new">login</a></li>  |
     <li id="register-link"><a href="/users/new">register</a></li>
   </ul>
 </nav>
-<% if @error %>
-  <p class="ajax-nav-errors"><%= @error %></p>
+<% if @ajax_error %>
+  <p class="ajax-nav-errors"><%= @ajax_error %></p>
 <% end %>
 
-<% if @errors %>
+<% if @ajax_errors %>
 <ul class="ajax-nav-errors">
-  <% @errors.each do |error| %>
+  <% @ajax_errors.each do |error| %>
     <li><%= error.downcase %></li>
   <% end %>
 </ul>

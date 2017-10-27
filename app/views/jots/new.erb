@@ -9,9 +9,10 @@
   </div>
 
   <div id="jot-form" class="jot-block">
-    <form>
-      <textarea class="unsplashed write-here" rows="12"></textarea>
-      <!-- <input type="submit" value="jotted."> -->
+    <form action="/jots" method="post">
+      <textarea class="unsplashed write-here" rows="12" name="content"></textarea>
+      <input type="hidden" name="photo" value="<%= @photo.id %>">
+      <input type="submit" value="jotted.">
     </form>
   </div>
 </div>

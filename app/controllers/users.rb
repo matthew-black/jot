@@ -16,7 +16,7 @@ post '/users' do
       session[:user_id] = @user.id
       erb :"sessions/_logged_in_nav", layout: false
     else
-      @errors = @user.errors.full_messages
+      @ajax_errors = @user.errors.full_messages
       erb :"sessions/_logged_out_nav", layout: false
     end
   else

@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed" rel="stylesheet">
 
     <!-- Slightly more snazy sans headers & serif content -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet"> -->
 
     <!-- jQuery all the things -->
   <script
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="head-container">
     <h1 class="left"><a href="/">jot.</a></h1>
     <div id="session-manager" class="right navdiv">
       <% if logged_in? %>
@@ -35,7 +35,7 @@
       <% end %>
     </div>
   </div>
-  <main class ="main-container">
+  <main>
     <%= yield %>
   </main>
 </body>
