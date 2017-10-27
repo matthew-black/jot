@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
 include BCrypt
 
+  has_many :jots
+
   validates :full_name, :username, :email, presence: true
   validates :username, :email, uniqueness: true
   validate :validate_password

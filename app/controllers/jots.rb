@@ -3,7 +3,6 @@ get '/jots' do
   @jots = Jot.order(:created_at).select do |jot|
     jot.public_post
   end
-  # this will need to be the show page where all the thumbnails live.
   erb :"/jots/index"
 end
 
@@ -17,7 +16,7 @@ end
 
   #--Create a new jot--#
 post '/jots' do
-  authenticate!
+  # authenticate!
   @jot = Jot.new(params[:jot])
   if @jot.valid?
     current_user.jots << @jots
