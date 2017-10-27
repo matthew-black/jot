@@ -35,6 +35,6 @@ get '/users/:id' do
   authenticate!
   @user = User.find_by(id: params[:id])
   authorize!(@user)
-  @jots = @user.jots
+  @jots = @user.jots.order(:created_at).reverse
   erb :"users/show"
 end
