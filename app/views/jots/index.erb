@@ -1,11 +1,7 @@
-<!-- It'd be dope if you could add "likes" and make an algorithm that combines
-recentness and "likes." You know, like that one site.... -->
-<h2>Recent jots:</h2>
-
-<% @jots.each do |jot| %>
-  <%= erb :"jots/_show", layout: false, locals: { jot: jot } %>
-<% end %>
-
-
-<!-- Maybe something in the header with the philosophy
-use directions for the site? -->
+<div id="jot-index">
+  <% @jots.each do |jot| %>
+  <div class="container jot-preview">
+    <%= erb :"jots/_show", layout: false, locals: { jot: jot } %>
+  </div>
+  <% end %>
+</div>

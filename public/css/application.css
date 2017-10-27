@@ -31,9 +31,9 @@ h2, h3, h4, h5 {
 /*  margin: 0;
   padding: 0;*/
   color: #222;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'Roboto Slab', sans-serif;
+/*  font-weight: bold;
+  font-style: italic;*/
 }
 
   /* This removes borders from size computations */
@@ -61,17 +61,10 @@ main {
   clear: right;
   float: right;
   /*width: 35%;*/
-  /*margin: 2% 0;*/
+  margin: 2% 0;
   padding: 0;
 }
 
-. {
-  clear: right;
-  float: right;
-  width: auto;
-  /*margin: 2% 0;*/
-  padding: 0;
-}
 
 .left {
   clear: left;
@@ -181,6 +174,42 @@ textarea {
   font-size: 70%;
   font-style: italic;
   margin: 0;
+}
+
+#jot-index {
+  position: relative;
+  bottom: 50px;
+}
+
+.jot-preview {
+  padding-top: 5em;
+}
+
+.jot-content-preview {
+  width: 65%;
+  text-align: left;
+  font-style: bold;
+  font-size: 150%;
+}
+
+.jot-deets {
+  display: block;
+  position: relative;
+  bottom: 1.3em;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.jot-author {
+  width: 60%;
+  color: #888888;
+}
+
+.jot-date {
+  width: 60%;
+  color: #888888;
+  position: relative;
+  bottom: 1.7em;
 }
 
   /* Clean sans combo: */
