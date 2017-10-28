@@ -7,7 +7,10 @@
           <input type="submit" id="share-unshare-button" value="<%= @jot.viewability %>">
       </form>
     <% end %>
-    <p id="showpage-photog" class="right photog-attribution"><a href="<%= @jot.photo.photog_url %>"><%= @jot.photo.photog_name %></a><span class="slash"> / </span><a href="https://unsplash.com/">Unsplash</a></p>
+  <p class="right photog-attribution">
+    <a href="<%= @jot.photo.photog_url %>"><%= @jot.photo.photog_name %></a>
+    <span class="slash"> / </span><a href="https://unsplash.com/">Unsplash</a>
+  </p>
     <img class="unsplashed" src="<%= @jot.photo.url %>">
 
     <p class="left unsplashed jot-content"><%= @jot.content %></p>
