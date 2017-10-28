@@ -40,7 +40,7 @@ function write() {
 
 function clear() {
   $("#disappear-me").remove();
-  $(".photog-attribution").remove();
+  $("#photog-info").remove();
 }
 
 function magic() {
