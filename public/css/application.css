@@ -203,13 +203,13 @@ a {
 
 .jot-preview {
   font-family: 'Roboto Slab', serif;
-  margin-top: 0;
+  margin-top: 0.2em;
   font-size: 175%;
 }
 
 .jotted_by {
   position: relative;
-  bottom: 2em;
+  bottom: 1.7em;
   left: 2em;
   margin: 0.1em;
   text-align: left;
