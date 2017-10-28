@@ -205,14 +205,15 @@ a {
 }
 
 .jot-preview {
+  font-family: 'Roboto Slab', serif;
   margin-top: 0;
   font-size: 175%;
 }
 
 .jotted_by {
   position: relative;
-  bottom: 1.8em;
-  left: 1em;
+  bottom: 2em;
+  left: 2em;
   margin: 0.1em;
   text-align: left;
   width: 100%;
@@ -228,6 +229,7 @@ a {
 #jot-popups {
   position: relative;
   bottom: 2em;
+  color: #222;
 }
 
 #look {
@@ -239,12 +241,19 @@ a {
 }
 
 #textarea-border {
-  box-shadow: 0 0 1.5em #D0D0D0;
+  clear: both;
+  box-shadow: 0 0 3em #D0D0D0;
+  visibility: hidden;
   /*box-shadow: none;*/
 }
 
+#textarea-holder {
+  position: relative;
+  bottom: 5em;
+}
+
 textarea {
-  visibility: visible;
+  visibility: hidden;
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
   color: #222;
@@ -252,8 +261,8 @@ textarea {
   outline-width: 0;
   border: none;
   line-height: 1.5em;
-  position: relative;
-  bottom: 5em;
+/*  position: relative;
+  bottom: 5em;*/
   resize: none;
 }
 
@@ -261,7 +270,7 @@ textarea {
   position: relative;
   bottom: 5.3em;
   text-align: center;
-  visibility: visible;
+  visibility: hidden;
   width: 100%;
   margin: auto;
   background: none;

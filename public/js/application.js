@@ -2,6 +2,36 @@ $(document).ready(function() {
 
 //------ Timer-based stuff for jots/new ------//
   // Show 'look' prompt:
+function look() {
+  $("#look").css("visibility", "visible").hide().fadeIn("slow");
+}
+function unlook() {
+  $("#look").css("visibility", "hidden");
+}
+
+function write() {
+  $("#write").css("visibility", "visible").hide().fadeIn("slow");
+  $("#textarea-border").css("visibility", "visible").hide().fadeIn("slow");
+  $("textarea").css("visibility", "visible");
+}
+function unborder() {
+  $("#textarea-border").css("visibility", "hidden");
+}
+function unwrite() {
+  $("#write").css("visibility", "hidden");
+}
+function publish() {
+  $("#publish").css("visibility", "visible").hide().fadeIn("slow");
+}
+
+  window.setTimeout(look, 5000);
+  window.setTimeout(unlook, 10000);
+  window.setTimeout(write, 15000);
+  window.setTimeout(unborder, 20000);
+  window.setTimeout(unwrite, 25000);
+  window.setTimeout(publish, 35000);
+
+  // Maybe hide all the other on-page elements?! That'd be dope!
 
 
 

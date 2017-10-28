@@ -1,7 +1,7 @@
-<div class="container">
+  <div class="container">
    <div class="new-container">
-    <p class="right photog-attribution"><a href="<%= @photo.photog_url %>"><%= @photo.photog_name %></a> / <a href="https://unsplash.com/">Unsplash</a></p>
-    <img class="unsplashed" src="<%= @photo.url %>">
+    <p class="right photog-attribution"><a href="https://unsplash.com/@johncobb">John Cobb</a> / <a href="https://unsplash.com/">Unsplash</a></p>
+    <img class="unsplashed" src="https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=433878ac7cefa63381b5bd0d265e0040">
   </div>
 
   <div id="jot-popups" class="jot-block">
@@ -11,10 +11,11 @@
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">
       <button id="publish" type="submit"><h3>publish.</h3></button>
-      <span>
-        <input type="hidden" name="photo" value="<%= @photo.id %>">
-        <textarea class="unsplashed" id="textarea-border" rows="16" name="content"></textarea>
-      </span>
+      <div id="textarea-holder">
+        <div id="textarea-border">
+          <textarea class="unsplashed" rows="16" name="content"></textarea>
+        </div>
+      </div>
     </form>
   </div>
 </div>
