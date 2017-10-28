@@ -35,20 +35,29 @@ Dummy for jots/new.erb (reduce API calls...)
 
   <div class="container">
    <div class="new-container">
-    <p class="right photog-attribution"><a href="https://unsplash.com/@johncobb">John Cobb</a> / <a href="https://unsplash.com/">Unsplash</a></p>
+    <p id="disappearable" class="right photog-attribution"><a href="https://unsplash.com/@johncobb">John Cobb</a> / <a href="https://unsplash.com/">Unsplash</a></p>
     <img class="unsplashed" src="https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=433878ac7cefa63381b5bd0d265e0040">
   </div>
 
   <div id="jot-popups" class="jot-block">
-    <h3><span id="write" class="right">write.</span><span id="look" class="left">look.</span></h3>
+    <h3 id="prompts">
+        <span id="look">look.</span>
+        <span id="inhale">breathe in.</span>
+        <span id="pause">pause.</span>
+        <span id="exhale">breathe out.</span>
+        <span id="do-magic">close your eyes and take a deep breath.</span>
+        <span id="write">relax. write.</span>
+   </h3>
   </div>
 
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">
-      <button id="publish" type="submit"><h3>publish.</h3></button>
-      <span>
-        <textarea class="unsplashed" id="textarea-border" rows="16" name="content"></textarea>
-      </span>
+      <button id="save" type="submit"><h3>save.</h3></button>
+      <div id="textarea-holder">
+        <div id="textarea-border">
+          <textarea class="unsplashed" rows="10" name="content"></textarea>
+        </div>
+      </div>
     </form>
   </div>
 </div>
@@ -62,21 +71,26 @@ Actual jots/new.erb:
     <img class="unsplashed" src="<%= @photo.url %>">
   </div>
 
-
-
   <div id="jot-popups" class="jot-block">
-    <h3><span id="write" class="right">write.</span><span id="look" class="left">look.</span></h3>
+    <h3 id="prompts">
+        <span id="look">look.</span>
+        <span id="inhale">breathe in.</span>
+        <span id="pause">pause.</span>
+        <span id="exhale">breathe out.</span>
+        <span id="do-magic">close your eyes and take a deep breath.</span>
+        <span id="write">relax. write.</span>
+    </h3>
   </div>
-
-
 
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">
-      <button id="publish" type="submit"><h3>publish.</h3></button>
-      <span>
+      <button id="save" type="submit"><h3>save.</h3></button>
         <input type="hidden" name="photo" value="<%= @photo.id %>">
-        <textarea class="unsplashed" id="textarea-border" rows="16" name="content"></textarea>
-      </span>
+        <div id="textarea-holder">
+          <div id="textarea-border">
+            <textarea class="unsplashed" rows="10" name="content"></textarea>
+          </div>
+        </div>
     </form>
   </div>
 </div>

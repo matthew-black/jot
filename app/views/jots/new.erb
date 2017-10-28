@@ -10,10 +10,8 @@
     crossorigin="anonymous">
   </script>
   <script src="/js/application.js"></script>
-
   <title>jot.</title>
 </head>
-
 <body>
   <div id="disappear-me" class="head-container">
     <h1 class="left"><a href="/">jot.</a></h1>
@@ -29,12 +27,12 @@
 
 
 
-
-  <div class="container">
+<div class="container">
    <div class="new-container">
-    <p id="disappearable" class="right photog-attribution"><a href="https://unsplash.com/@johncobb">John Cobb</a> / <a href="https://unsplash.com/">Unsplash</a></p>
-    <img class="unsplashed" src="https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=433878ac7cefa63381b5bd0d265e0040">
+    <p class="right photog-attribution"><a href="<%= @photo.photog_url %>"><%= @photo.photog_name %></a> / <a href="https://unsplash.com/">Unsplash</a></p>
+    <img class="unsplashed" src="<%= @photo.url %>">
   </div>
+
   <div id="jot-popups" class="jot-block">
     <h3 id="prompts">
         <span id="look">look.</span>
@@ -43,20 +41,21 @@
         <span id="exhale">breathe out.</span>
         <span id="do-magic">close your eyes and take a deep breath.</span>
         <span id="write">relax. write.</span>
-   </h3>
+    </h3>
   </div>
+
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">
       <button id="save" type="submit"><h3>save.</h3></button>
-      <div id="textarea-holder">
-        <div id="textarea-border">
-          <textarea class="unsplashed" rows="10" name="content"></textarea>
+        <input type="hidden" name="photo" value="<%= @photo.id %>">
+        <div id="textarea-holder">
+          <div id="textarea-border">
+            <textarea class="unsplashed" rows="10" name="content"></textarea>
+          </div>
         </div>
-      </div>
     </form>
   </div>
 </div>
-
 
 
 
