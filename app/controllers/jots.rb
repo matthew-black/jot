@@ -12,7 +12,8 @@ get '/jots/new' do
   photo = Unsplash::Photo.random(featured: true, orientation: "landscape")
   @photo = Photo.new(url: photo.urls.regular, small_url: photo.urls.small, thumb_url: photo.urls.thumb, photog_name: "#{photo.user.first_name} #{photo.user.last_name}", photog_url: photo.user.links.html)
   if @photo.save
-    erb :"/jots/new"
+    @disappearable = true
+    erb :"/jots/new", layout: false
   else
     halt(404, erb(:'404'))
   end

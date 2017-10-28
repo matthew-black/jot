@@ -62,9 +62,13 @@ Actual jots/new.erb:
     <img class="unsplashed" src="<%= @photo.url %>">
   </div>
 
+
+
   <div id="jot-popups" class="jot-block">
     <h3><span id="write" class="right">write.</span><span id="look" class="left">look.</span></h3>
   </div>
+
+
 
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">

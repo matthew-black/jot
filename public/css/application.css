@@ -13,9 +13,8 @@ h1 {
 
 h2, h3, h4, h5 {
   color: #222;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: bold;
-  /*font-style: italic;*/
 }
 
 * {
@@ -23,7 +22,6 @@ h2, h3, h4, h5 {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 
 main {
   clear: both;
@@ -82,7 +80,6 @@ a {
   margin: 2% 0;
   padding: 0;
 }
-
 
 .left {
   clear: left;
@@ -205,14 +202,15 @@ a {
 }
 
 .jot-preview {
+  font-family: 'Roboto Slab', serif;
   margin-top: 0;
   font-size: 175%;
 }
 
 .jotted_by {
   position: relative;
-  bottom: 1.8em;
-  left: 1em;
+  bottom: 2em;
+  left: 2em;
   margin: 0.1em;
   text-align: left;
   width: 100%;
@@ -228,40 +226,43 @@ a {
 #jot-popups {
   position: relative;
   bottom: 2em;
+  color: #444;
 }
 
-#look {
-  visibility: hidden;
-}
-
-#write {
-  visibility: hidden;
+#prompts {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 1em;
 }
 
 #textarea-border {
-  box-shadow: 0 0 1.5em #D0D0D0;
-  /*box-shadow: none;*/
+  box-shadow: none;
+}
+
+#textarea-holder {
+  position: relative;
+  bottom: 4em;
 }
 
 textarea {
-  visibility: visible;
+  visibility: hidden;
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
-  color: #222;
+  color: #444;
   background-color: #F8F8F8;
   outline-width: 0;
   border: none;
   line-height: 1.5em;
-  position: relative;
-  bottom: 5em;
   resize: none;
 }
 
-#publish {
+#save {
   position: relative;
-  bottom: 5.3em;
+  bottom: 3.5em;
   text-align: center;
-  visibility: visible;
+  visibility: hidden;
   width: 100%;
   margin: auto;
   background: none;
@@ -270,8 +271,21 @@ textarea {
   font: inherit;
 }
 
+#about-container {
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
 #about {
   font-family: 'Roboto Slab', serif;
   color: #444;
+  float: left;
+  margin-bottom: 25px;
+  width: 80%;
 }
 
+#about a {
+  color: purple;
+}
