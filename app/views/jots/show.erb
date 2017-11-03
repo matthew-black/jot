@@ -8,8 +8,8 @@
       </form>
     <% end %>
   <p class="right photog-attribution">
-    <a href="<%= @jot.photo.photog_url %>"><%= @jot.photo.photog_name %></a>
-    <span class="slash"> / </span><a href="https://unsplash.com/">Unsplash</a>
+    <a href="<%= @jot.photo.photog_url %>?utm_source=jot&utm_medium=referral&utm_campaign=api-credit"><%= @jot.photo.photog_name %></a>
+    <span class="slash"> / </span><a href="https://unsplash.com/?utm_source=jot&utm_medium=referral&utm_campaign=api-credit">Unsplash</a>
   </p>
     <img class="unsplashed" src="<%= @jot.photo.url %>">
 
