@@ -2,7 +2,9 @@
 get '/jots' do
   @jots = Jot.order(:created_at).reverse.select do |jot|
     jot.public_post
-  end
+  end.slice(0..4)
+  # .slice(0..9).shuffle.slice(0..4)
+      #--if you want five randoms from the  most recent 10 jots
   erb :"/jots/index"
 end
 
