@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-  #--This makes the magic--#
+  #--Unsplash API's gem, and gem to load environment variables--#
 gem 'unsplash'
 gem 'dotenv'
 
@@ -27,7 +27,7 @@ group :test do
 end
 
 group :test, :development do
-  gem 'factory_girl'
+  # gem 'factory_bot'
   gem 'faker'
   gem 'pry'
 end
