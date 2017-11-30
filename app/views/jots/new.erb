@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/application.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed" rel="stylesheet">
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
-  </script>
-  <script src="/js/application.js"></script>
-  <title>jot.</title>
-</head>
-<body>
-  <div id="disappear-me" class="head-container">
-    <h1 class="left"><a href="/">jot.</a></h1>
-    <div id="session-manager" class="right navdiv">
-      <% if logged_in? %>
-        <%= erb :"sessions/_logged_in_nav", layout: false %>
-      <% else %>
-        <%= erb :"sessions/_logged_out_nav", layout: false %>
-      <% end %>
-    </div>
-  </div>
-  <main>
-
-
-
 <div class="container">
    <div class="new-container">
     <p id="photog-info" class="right photog-attribution"><a href="<%= @photo.photog_url %>?utm_source=jot&utm_medium=referral&utm_campaign=api-credit"><%= @photo.photog_name %></a> / <a href="https://unsplash.com/?utm_source=jot&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></p>
-    <img class="unsplashed" src="<%= @photo.url %>">
-  </div>
-
+      <img class="unsplashed" src="<%= @photo.url %>">
+    </div>
   <div id="jot-popups" class="jot-block">
     <h3 id="prompts">
         <span id="look">look.</span>
@@ -47,7 +17,10 @@
   <div class="new-container">
     <form id="jot-form"  action="/jots" method="post">
       <button id="save" type="submit"><h3>save.</h3></button>
-        <input type="hidden" name="photo" value="<%= @photo.id %>">
+        <input type="hidden" name="photo[url]" value="<%= @photo.url %>">
+        <input type="hidden" name="photo[photog_name]" value="<%= @photo.photog_name %>">
+        <input type="hidden" name="photo[photog_url]" value="<%= @photo.photog_url %>">
+
         <div id="textarea-holder">
           <div id="textarea-border">
             <textarea class="unsplashed" rows="10" name="content"></textarea>
@@ -56,9 +29,4 @@
     </form>
   </div>
 </div>
-
-
-
-  </main>
-</body>
-</html>
+<script src="/js/animation.js"></script>
