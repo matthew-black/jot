@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
 // Functions to make the on-page script do its thing:
-  // (Refactor this crap to be a function that takes an argument.
-  // But get some goddamn sleep first, or you'll break everything.)
+  // (Refactor this stuff to be a function that takes an argument.)
 function look() {
   $("#look").fadeIn("slow");
 }
@@ -85,61 +84,53 @@ $()
   //  usually into doing breathing stuff...)
   // Anywho, maybe three buttons. Something like:
     // ?? "I'm new." "I'm into this." "I'm basically a Yogi." ??
-//   window.setTimeout(inhale, 5000);
-//     window.setTimeout(inhaleX, 8000);
-//   window.setTimeout(hold, 9000);
-//     window.setTimeout(holdX, 11000);
-//   window.setTimeout(exhale, 12000);
-//     window.setTimeout(exhaleX, 16400);
+  window.setTimeout(inhale, 5000);
+    window.setTimeout(inhaleX, 8000);
+  window.setTimeout(hold, 9000);
+    window.setTimeout(holdX, 11000);
+  window.setTimeout(exhale, 12000);
+    window.setTimeout(exhaleX, 16400);
 
-//   window.setTimeout(inhale, 17400);
-//     window.setTimeout(inhaleX, 20400);
-//   window.setTimeout(hold, 21400);
-//     window.setTimeout(holdX, 23400);
-//   window.setTimeout(exhale, 24400);
-//     window.setTimeout(exhaleX, 28800);
+  window.setTimeout(inhale, 17400);
+    window.setTimeout(inhaleX, 20400);
+  window.setTimeout(hold, 21400);
+    window.setTimeout(holdX, 23400);
+  window.setTimeout(exhale, 24400);
+    window.setTimeout(exhaleX, 28800);
 
 
-//   window.setTimeout(inhale, 29800);
-//     window.setTimeout(inhaleX, 32800);
-//   window.setTimeout(hold, 33800);
-//     window.setTimeout(holdX, 35800);
-//   window.setTimeout(exhale, 36800);
-//     window.setTimeout(exhaleX, 41200);
+  window.setTimeout(inhale, 29800);
+    window.setTimeout(inhaleX, 32800);
+  window.setTimeout(hold, 33800);
+    window.setTimeout(holdX, 35800);
+  window.setTimeout(exhale, 36800);
+    window.setTimeout(exhaleX, 41200);
 
-//   window.setTimeout(inhale, 42200);
-//     window.setTimeout(inhaleX, 45200);
-//   window.setTimeout(hold, 46200);
-//     window.setTimeout(holdX, 48200);
-//   window.setTimeout(exhale, 49200);
-//     window.setTimeout(exhaleX, 53600);
+  window.setTimeout(inhale, 42200);
+    window.setTimeout(inhaleX, 45200);
+  window.setTimeout(hold, 46200);
+    window.setTimeout(holdX, 48200);
+  window.setTimeout(exhale, 49200);
+    window.setTimeout(exhaleX, 53600);
 
 // // One last relaxing breath:
-//   window.setTimeout(magic, 55000)
-//   window.setTimeout(unmagic, 57000)
+  window.setTimeout(magic, 55000)
+  window.setTimeout(unmagic, 57000)
 
 // Make the space real pretty:
-  window.setTimeout(clear, 1000);
-  // window.setTimeout(clear, 59000);
+  window.setTimeout(clear, 59000);
 
 // Display 'write' prompt:
-  window.setTimeout(write, 2000);
-  window.setTimeout(unwrite, 3000);
-  // window.setTimeout(write, 59500);
-  // window.setTimeout(unwrite, 70000);
+  window.setTimeout(write, 59500);
+  window.setTimeout(unwrite, 70000);
 
 // Display textarea:
-  window.setTimeout(text, 4000);
-  window.setTimeout(border, 4000);
-  window.setTimeout(unborder, 5000);
-  // window.setTimeout(text, 71000);
-  // window.setTimeout(border, 71000);
-  // window.setTimeout(unborder, 85000);
+  window.setTimeout(text, 71000);
+  window.setTimeout(border, 71000);
+  window.setTimeout(unborder, 85000);
 
 
 // Display save button:
-  window.setTimeout(save, 6000);
-
-  // window.setTimeout(save, 375000);
+  window.setTimeout(save, 375000);
 
 });
