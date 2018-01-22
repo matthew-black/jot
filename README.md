@@ -6,3 +6,5 @@ One minute to look at the picture and follow along with a yoga-based breathing e
 Try it out here:
 
 https://promptjot.herokuapp.com/
+
+![jot](jot.png)
