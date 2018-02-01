@@ -40,7 +40,11 @@ end
   #--Display an individual jot--#
 get "/jots/:id" do
   @jot = find_and_ensure(params[:id])
+  if @jot.public_post != true
+    authorize!(@jot.user)
+  end
   erb :"/jots/show"
+
 end
 
   #--Toggle a jot's public/private status--#
