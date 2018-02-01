@@ -1,6 +1,7 @@
 <nav>
   <ul>
-    <li><a id="nav-username" href="/users/<%= current_user.id %>"><%= current_user.username %></a></li>  |
+    <li id="nav-username">hey <%= current_user.username.downcase %></li>  |
+    <li><a href="/users/<%= current_user.id %>">my jots</a></li>  |
     <li><a href="/jots/new">create jot</a></li>  |
     <li><a><%= erb :"/sessions/_delete" %></a></li>
   </ul>

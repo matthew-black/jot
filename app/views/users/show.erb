@@ -1,7 +1,15 @@
-<div class="container">
-  <% @jots.each do |jot| %>
-  <div class="jot-container">
-    <%= erb :"jots/_show", layout: false, locals: { jot: jot } %>
+<% if !current_user.jots.empty? %>
+  <div class="container">
+    <% @jots.each do |jot| %>
+    <div class="jot-container">
+      <%= erb :"jots/_show", layout: false, locals: { jot: jot } %>
+    </div>
+    <% end %>
   </div>
-  <% end %>
-</div>
+<% else %>
+  <div class="jot-container">
+    <p>
+      Looks like you haven't written any jots yet, but we hope you do.
+    </p>
+  <div class="jot-container">
+<% end %>
